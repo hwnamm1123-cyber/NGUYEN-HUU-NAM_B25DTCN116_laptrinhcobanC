@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-	int luachon;
+	int choice;
 	int a,b,c;
 	do{
 		printf("\n--- MENU CHUC NANG ---\n");
@@ -11,9 +11,9 @@ int main(){
 	    printf("5. So lon nhat\n");
 	    printf("6. Thoat\n");
 	    printf("Lua chon cua ban: ");
-	    scanf("%d", &luachon);
+	    scanf("%d", &choice);
 	    
-	    switch(luachon){
+	    switch(choice){
 	    	case 1:
 				printf ("Moi ban nhap vao 3 so nguyen bat ky\n");
 				printf ("So nguyen dau tien la: ");
@@ -56,6 +56,7 @@ int main(){
 				printf("So nhap khong hop le\n");			
 		}
 
-	}while(luachon != 6);
+	}while(choice != 6);
 	return 0;
 }
+

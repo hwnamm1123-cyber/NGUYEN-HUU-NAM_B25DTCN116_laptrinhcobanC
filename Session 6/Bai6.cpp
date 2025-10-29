@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main(){
 	int a, b;
-	int luachon;
-	float Ketqua;
+	int choice;
+	float result;
    	do{
    		printf ("Moi ban nhap 2 so bat ky \n");
    		printf ("Moi ban nhap vao so dau tien: ");
@@ -34,35 +34,35 @@ int main(){
 	    printf("5.  Thoat\n");
 	    printf("Lua chon cua ban (1-5): ");
 	    
-	    if(scanf("%d", &luachon) !=1 ){
+	    if(scanf("%d", &choice) !=1 ){
 	    	printf ("Loi nhap lieu");
-	    	if (luachon <= 0){ 
+	    	if (choice <= 0){ 
 			} else {
 				while (getchar() != '\n'); 
 			}
-			luachon = 0;
+			choice = 0;
 			continue; // quay lai menu vong lap
 		}	
 		
-    switch (luachon){
+    switch (choice){
     	case 1:
-    		Ketqua = a + b;
-    		printf ("Ket qua: %.2f + %.2f = %.2f\n", a, b, Ketqua);
+    		result = a + b;
+    		printf ("Ket qua: %.2f + %.2f = %.2f\n", a, b, result);
             break;
         case 2:
-        	Ketqua = a - b;
-            printf ("Ket qua: %.2f - %.2f = %.2f\n", a, b, Ketqua);
+        	result = a - b;
+            printf ("Ket qua: %.2f - %.2f = %.2f\n", a, b, result);
             break;
         case 3:
-        	Ketqua = a * b;
-            printf ("Ket qua: %.2f * %.2f = %.2f\n", a, b, Ketqua);
+        	result = a * b;
+            printf ("Ket qua: %.2f * %.2f = %.2f\n", a, b, result);
             break;
         case 4:
             if (b == 0) {
             printf ("Loi: Khong the chia cho 0.\n");
             } else {
-            	Ketqua = a /b;
-           		printf ("Ket qua: %.2f / %.2f = %.2f\n", a, b, Ketqua);
+            	result = a /b;
+           		printf ("Ket qua: %.2f / %.2f = %.2f\n", a, b, result);
             }
             break;
         case 5:
@@ -72,7 +72,7 @@ int main(){
         	printf ("Lua chon khong co trong menu (Vui long chon 1-5).\n");
             break;
     }
-    } while (luachon != 5);
+    } while (choice != 5);
 	return 0;
 }
 
