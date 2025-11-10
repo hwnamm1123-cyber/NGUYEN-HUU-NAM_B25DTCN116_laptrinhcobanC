@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdio.h>
+#include <stdbool.h>
 
 bool check_perfectNumber(int n);
 
@@ -62,3 +62,4 @@ bool check_perfectNumber(int n){
 		return false;
 	}
 } 
+
